@@ -8,7 +8,7 @@ Cactus Plus Plus is a minimalistic theme for blogger based on the theme named [C
 + **Tags page**
 + **Archive page**
 + **[Disqus](https://disqus.com/) comment-system**
-+ **Both Google Analytics and Baidu Analytics for site analytics.**
++ **Google Analytics for site analytics.**
 + **Table of Contents**
 + **Twitter Card**
 

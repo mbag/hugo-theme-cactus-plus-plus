@@ -1,17 +1,17 @@
-name = "Cactus Plus"
+name = "Cactus Plus Plus"
 license = "MIT"
-licenselink = "https://github.com/nodejh/hugo-theme-cactus-plus/blob/master/LICENSE.md"
+licenselink = "https://github.com/mbag/hugo-theme-cactus-plus-plus/blob/master/LICENSE.md"
 description = "A minimalistic and responsive theme for bloggers."
-homepage = "https://github.com/nodejh/hugo-theme-cactus-plus"
+homepage = "https://github.com/mbag/hugo-theme-cactus-plus-plus"
 tags = ["blog", "beautiful", "disqus", "rss", "syntax highlighting", "tags"]
 features = ["blog", "beautiful", "disqus", "rss", "syntax highlighting", "tags"]
 min_version = 0.20
 
 [author]
-  name = "nodejh"
-  homepage = "https://github.com/nodejh"
+  name = "mbag"
+  homepage = "https://github.com/mbag"
 
 [[original]]
-  name = "Cactus"
+  name = "Cactus Plus"
   homepage = "https://themes.gohugo.io/cactus/"
-  repo = "https://github.com/digitalcraftsman/hugo-cactus-theme"
+  repo = "https://github.com/nodejh/hugo-theme-cactus-plus"
