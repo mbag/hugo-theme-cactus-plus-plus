@@ -95,7 +95,7 @@ For example to add author `mbag` create `content/authors/mbag` directory and `_i
 ```
 ---
 name: "mbag"
-bio: "Write here short biography or just authors job description"
+bio: "Write here a short biography or just author's job description"
 avatar: "<path-to-avatar-image>/mbag.jpg"
 weight: 1
 twitter: "mbag"
@@ -103,14 +103,14 @@ github: "https://www.github.com/mbag"
 ---
 ```
 
-Path to avatar image is relative to `static/` directory of your hugo project.
-If you place avatar image inside `static/images/authors/avatars/` then `avatar` attribute will have following value
+Path to an avatar is relative to the `static/` directory of your project.
+If you place the avatar inside `static/images/authors/avatars/` then `avatar` attribute will have following value
 ```
 avatar: "images/authors/avatars/mbag.jpg"
 
 ```
 
-To attribute post to an author, just add `author:` attribute in the post's header:
+To attribute a post to an author, just add `author:` attribute in the post's header:
 
 ```
 ---
@@ -122,7 +122,6 @@ description: This tutorial will show you how to create a simple theme in Hugo.
 weight: 10
 ---
 ```
-
 
 
 ## Avatar
