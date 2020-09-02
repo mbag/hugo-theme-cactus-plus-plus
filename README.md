@@ -21,6 +21,7 @@ Cactus Plus Plus is a minimalistic theme for blogger based on the theme named [C
 	- [Example Site](#example-site)
 	- [Posts Summary](#posts-summary)
 	- [About page](#about-page)
+	- [Adding authors](#adding-authors)
 	- [Avatar](#avatar)
 	- [Hide pages](#hide-pages)
 	- [Disqus](#disqus)
@@ -75,6 +76,54 @@ To use the content summary, you may add the `<!--more-->` summary divider where 
 ## About page
 
 Use the about page to introduce yourself to your visitors. You can customize the content as you like in the `/content/about/_index.md`.
+
+## Adding authors
+
+Each post can have an author associated with it. To add this feature add following section to your `config.toml`
+
+```
+[taxonomies]
+  author = "authors"
+  tag = "tags"
+  category = "categories"
+
+```
+
+Now you can add multiple authors by simply adding them to individual directories under `content/authors/`.
+For example to add author `mbag` create `content/authors/mbag` directory and `_index.md` inside that directory with following contents:
+
+```
+---
+name: "mbag"
+bio: "Write here short biography or just authors job description"
+avatar: "<path-to-avatar-image>/mbag.jpg"
+weight: 1
+twitter: "mbag"
+github: "https://www.github.com/mbag"
+---
+```
+
+Path to avatar image is relative to `static/` directory of your hugo project.
+If you place avatar image inside `static/images/authors/avatars/` then `avatar` attribute will have following value
+```
+avatar: "images/authors/avatars/mbag.jpg"
+
+```
+
+To attribute post to an author, just add `author:` attribute in the post's header:
+
+```
+---
+author: "mbag"
+date: 2020-09-02
+linktitle: Creating a New Theme
+title: Creating a New Theme
+description: This tutorial will show you how to create a simple theme in Hugo.
+weight: 10
+---
+```
+
+
 
 ## Avatar
 
