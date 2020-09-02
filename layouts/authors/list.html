@@ -1,0 +1,44 @@
+{{ partial "head.html" . }}
+	<body>
+	{{ partial "nav.html" . }}
+	{{ partial "profile.html" . }}
+
+  <section id="wrapper" class="home">
+    <div class="p-author">
+        <div class="c-avatar">
+          <img alt="author avatar" src="{{ .Site.BaseURL }}{{ .Params.avatar }}" >
+        </div>
+        <div class="p-author-text">
+              <div class="p-author-name">
+              {{ .Params.name }}
+              </div>
+
+              <div class="p-author-bio">
+              {{ .Params.bio }}
+              </div>
+        </div>
+    </div>
+
+    <ul id="post-list" class="author-list">
+          {{ $author := .Params.name }}
+          {{ range where .Site.RegularPages "Params.author" "eq" $author }}
+        <li>
+          <div class="post-item">
+            <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
+            <a href="{{ .Permalink }}" class="post-link">
+              {{ .Title }}
+            </a>
+          </div>
+        </li>
+          {{ end }}
+    </ul>
+  </section>
+
+
+	<div class="dd">
+	</div>
+
+	{{ partial "js.html" . }}
+	</body>
+</html>
+

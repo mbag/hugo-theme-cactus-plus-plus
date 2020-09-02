@@ -36,23 +36,24 @@
             </article>
 
             <div class="p-author">
-							{{ if isset .Params "author" }}
-								{{ $author := index .Site.Data.authors .Params.author }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s"  (urlize .Params.author)) }}
                 <div class="c-avatar">
-									<img alt="author avatar" src="{{ .Site.BaseURL }}{{ $author.avatar }}" >
+                  <a href="{{ .Permalink }}">
+									<img alt="author avatar" src="{{ .Site.BaseURL }}{{ .Params.avatar }}" >
+                  </a>
                 </div>
-                <div>
-											<p style="font-size: 25px">
-											{{ $author.name }}
-											</p>
+                <div class="p-author-text">
+                      <a href="{{ .Permalink }}">
+                        <div class="p-author-name">
+                        {{ .Params.name }}
+                        </div>
+                      </a>
 
-											<p>
-											{{ $author.bio }}
-											</p>
-									{{ else }}
-											Unknown
-									{{ end }}
+											<div class="p-author-bio">
+											{{ .Params.bio }}
+											</div>
                 </div>
+								{{ end }}
             </div>
 
             {{ if .Site.Params.enableShare }}

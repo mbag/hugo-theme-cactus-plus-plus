@@ -933,18 +933,23 @@ a.symbol:hover {
     color: #5694f1;
 }
 
-.p-author {
- display:block;
- position:relative;
- width:100%;
- margin:20px auto 0
-}
 @media screen and (min-width: 640px) {
  .p-author {
   display:flex;
-  margin:80px auto 0
+  margin:80px auto 0;
  }
 }
+
+.p-author {
+ display:flex;
+ position:relative;
+ width:100%;
+ margin:20px auto 0;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+
 .p-author::before {
  content:'* * *';
  position:absolute;
@@ -957,12 +962,44 @@ a.symbol:hover {
  color:#999
 }
 
+.p-author-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.p-author-name {
+ font-size: 35px;
+ margin-top: 10px;
+ margin-bottom: 10px;
+ text-align: center;
+}
+
+.p-author-bio {
+ font-size: 20px;
+ margin-top: 15px;
+ margin-bottom: 15px;
+}
+
 .c-avatar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100px;
+ height: 100px;
+ border-radius: 50%;
+ overflow: hidden;
+}
+
+
+.author-list {
+  margin-top: 30px;
+}
+
+.author-list li{
+  margin-left: 0px;
 }
