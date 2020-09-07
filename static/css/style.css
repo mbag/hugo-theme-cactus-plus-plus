@@ -136,7 +136,7 @@ h2 {
 
 .profile #wrapper {
     padding: 60px 40px 0px;
-    max-width: 600px;
+    max-width: 50em;
     margin: 0 auto;
 }
 
@@ -225,7 +225,7 @@ nav.main-nav a.cta {
 }
 
 #wrapper.home {
-    max-width: 600px;
+    max-width: 50em;
     margin: 0 auto;
     padding: 0px 40px 20px 40px;
 }
@@ -546,7 +546,7 @@ Post List
 #header {
 }
 #wrapper.post {
-    max-width: 670px;
+    max-width: 50em;
 }
 .post {
     margin: auto;
