@@ -970,6 +970,12 @@ a.symbol:hover {
   margin-bottom: 20px;
 }
 
+.p-author-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .p-author-name {
  font-size: 35px;
  margin-top: 10px;

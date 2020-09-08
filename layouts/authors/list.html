@@ -17,6 +17,18 @@
               {{ .Params.bio }}
               </div>
         </div>
+        <div class="p-author-social">
+        {{ if .Params.github }}
+              <a class="symbol" href="{{ .Params.github }}">
+                  <i class="fa fa-github-square fa-2x"></i>
+              </a>
+        {{ end }}
+        {{ if .Params.linkedin }}
+              <a class="symbol" href="{{ .Params.linkedin }}">
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+              </a>
+        {{ end }}
+        </div>
     </div>
 
     <ul id="post-list" class="author-list">
@@ -39,6 +51,7 @@
 	</div>
 
 	{{ partial "js.html" . }}
+  {{ partial "footer.html" . }}
 	</body>
 </html>
 

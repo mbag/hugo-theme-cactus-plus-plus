@@ -1,5 +1,5 @@
 <footer id="footer">
-    {{ if .Site.Social }}
+    {{ if and (.Site.Social) (ne .Data.Singular "author" ) }}
         {{ partial "social.html" . }}
     {{ end }}
     <p class="small">
