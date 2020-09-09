@@ -1,7 +1,6 @@
 {{ partial "head.html" . }}
 	<body>
 	{{ partial "nav.html" . }}
-	{{ partial "profile.html" . }}
 
   <section id="wrapper" class="home">
     <div class="p-author">
@@ -20,12 +19,12 @@
         <div class="p-author-social">
         {{ if .Params.github }}
               <a class="symbol" href="{{ .Params.github }}">
-                  <i class="fa fa-github-square fa-2x"></i>
+                  <i class="fa fa-github-square fa-lg"></i>
               </a>
         {{ end }}
         {{ if .Params.linkedin }}
               <a class="symbol" href="{{ .Params.linkedin }}">
-                  <i class="fa fa-linkedin-square fa-2x"></i>
+                  <i class="fa fa-linkedin-square fa-lg"></i>
               </a>
         {{ end }}
         </div>

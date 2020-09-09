@@ -939,25 +939,13 @@ a.symbol:hover {
 }
 
 .p-author {
- display:flex;
- position:relative;
- width:100%;
- margin:20px auto 0;
+ display: flex;
+ position: relative;
+ width: 100%;
+ margin: 50px auto 0;
  flex-direction: column;
  justify-content: center;
  align-items: center;
-}
-
-.p-author::before {
- content:'* * *';
- position:absolute;
- top:-30px;
- left:0;
- right:0;
- margin:auto;
- text-align:center;
- font-size:1.4rem;
- color:#999
 }
 
 .p-author-text {
