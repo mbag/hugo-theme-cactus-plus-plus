@@ -110,6 +110,13 @@ avatar: "images/authors/avatars/mbag.jpg"
 
 ```
 
+In case your author doesn't have avatar, or doesn't want one, you can set `default_avatar` in `config.toml`:
+
+```
+[params]
+    default_avatar = "images/authors/avatars/default.jpg"
+```
+
 To attribute a post to an author, just add `author:` attribute in the post's header:
 
 ```
