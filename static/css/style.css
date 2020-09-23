@@ -464,6 +464,10 @@ img {
     border-radius: 3px;
 }
 
+/* selects all code elements that don't have class defined, which is single quote markdown highlighting */
+code:not([class]) {
+  color: #ea0a8e;
+}
 
 /* Made with Cactus Badge */
 
