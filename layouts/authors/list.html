@@ -5,7 +5,7 @@
   <section id="wrapper" class="home">
     <div class="p-author">
         <div class="c-avatar">
-          <img alt="author avatar" src="{{ .Site.BaseURL }}{{ .Params.avatar }}" >
+          <img alt="author avatar" src="{{ .Site.BaseURL }}{{ if isset .Params "avatar" }}{{ .Params.avatar }}{{ else }}{{ .Site.Params.default_avatar }}{{ end }} " >
         </div>
         <div class="p-author-text">
               <div class="p-author-name">
