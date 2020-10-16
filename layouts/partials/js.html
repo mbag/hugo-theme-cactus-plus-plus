@@ -8,3 +8,27 @@
 {{ if .Site.Params.enableGoogleAnalytics }}
   {{ template "_internal/google_analytics.html" . }}
 {{ end }}
+
+{{ if .Site.Params.enableCookieConsent }}
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+  window.cookieconsent.initialise({
+      palette: {
+          popup: {
+              background: "#f7f7f7",
+              text: "#777"
+          },
+          button: {
+              background: "transparent",
+              text: "#e20074",
+              border: "#e20074"
+          }
+      },
+      position: "bottom-right",
+      content: {
+          message: "{{ .Site.Params.cookieConsentMessage }}",
+          href: "{{ .Site.Params.cookieConsentPrivacyLink }}"
+      }
+  });
+</script>
+{{ end }}
