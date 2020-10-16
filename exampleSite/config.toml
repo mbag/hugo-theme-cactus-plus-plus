@@ -21,6 +21,11 @@ hasCJKLanguage = false
 	enableDisqus = true
 	disqusShortname = "your_disqus_short_name"
 
+	# Add cookie consent popup
+	enableCookieConsent = true
+	cookieConsentMessage = "This website uses cookies to ensure you get the best experience on our website."
+	cookieConsentPrivacyLink = "https://cookiesandyou.com"
+
 
 	enableSummary = true
 	# Set the value to true if use description in post front matter replace content summary
@@ -65,8 +70,8 @@ hasCJKLanguage = false
 
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
 	iconFont = "font-awesome"
-  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-  socialIconStyle = ""
+	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+	socialIconStyle = ""
 
 
 # Add additional social link entries underneath
