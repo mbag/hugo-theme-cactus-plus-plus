@@ -153,6 +153,16 @@ You can add a social link panel in the footer by adding entries to the `social` 
 
 Assign either `font-awesome` or `mono-social` to the `iconFont` variable. The Mono social icons offer three styles of icons: -circle, rounded, or default (empty).
 
+## Cookie Consent Popup
+
+You can add & configure cookie consent popup for your blog in the `params` block in the `config.toml`. e.g.:
+
+```toml
+enableCookieConsent = true
+cookieConsentMessage = "This website uses cookies to ensure you get the best experience on our website."
+cookieConsentPrivacyLink = "https://cookiesandyou.com"
+
+```
 
 ## Nearly finished
 
