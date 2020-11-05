@@ -24,7 +24,7 @@ hasCJKLanguage = false
 	# Add cookie consent popup
 	enableCookieConsent = true
 	cookieConsentMessage = "This website uses cookies to ensure you get the best experience on our website."
-	cookieConsentPrivacyLink = "https://cookiesandyou.com"
+	cookieConsentPrivacyLink = "<url-to-your-cookie-policy>"
 
 
 	enableSummary = true
