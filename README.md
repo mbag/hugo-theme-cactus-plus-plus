@@ -11,6 +11,7 @@ Cactus Plus Plus is a minimalistic theme for blogger based on the theme named [C
 + **Google Analytics for site analytics.**
 + **Table of Contents**
 + **Twitter Card**
++ **Cookie Consent dialog**
 
 
 <!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
