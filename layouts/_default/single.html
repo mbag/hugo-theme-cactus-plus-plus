@@ -40,8 +40,9 @@
                 </section>
             </article>
 
+            {{- range .Params.authors }}
             <div class="p-author">
-                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s"  (urlize .Params.author)) }}
+                {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s"  (urlize .)) }}
                 <div class="c-avatar">
                   <a href="{{ .Permalink }}">
                   <img alt="author avatar" src="{{ .Site.BaseURL }}{{ if isset .Params "avatar" }}{{ .Params.avatar }}{{ else }}{{ .Site.Params.default_avatar }}{{ end }} " >
@@ -60,6 +61,7 @@
                 </div>
 								{{ end }}
             </div>
+            {{ end }}
 
             {{ if .Site.Params.enableShare }}
                 {{ partial "share.html" . }}
