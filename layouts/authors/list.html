@@ -32,7 +32,8 @@
 
     <ul id="post-list" class="author-list">
           {{ $author := .Params.name }}
-          {{ range where .Site.RegularPages "Params.author" "eq" $author }}
+            {{ range .Site.RegularPages }}
+              {{ if in .Params.authors $author }}
         <li>
           <div class="post-item">
             <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
@@ -41,7 +42,8 @@
             </a>
           </div>
         </li>
-          {{ end }}
+              {{ end }}
+            {{ end }}
     </ul>
   </section>
 
