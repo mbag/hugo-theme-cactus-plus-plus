@@ -6,7 +6,7 @@
             <article>
                 <header>
                     <h1>
-                        {{ .Title }}
+                        {{ .Title | safeHTML }}
                     </h1>
                     {{ if .Params.Subtitle }}
                     <h2>
