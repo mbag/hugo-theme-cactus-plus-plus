@@ -1,4 +1,4 @@
-/* Background */ .chroma { background-color: #fff; font-family: monospace; font-size: .85em; }
+/* Background */ .chroma { background-color: #F6F8FA; font-family: monospace; font-size: .85em; padding: .2em; overflow-x: auto;}
 /* Other */ .chroma .x {  }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
