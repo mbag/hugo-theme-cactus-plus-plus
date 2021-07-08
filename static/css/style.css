@@ -466,7 +466,12 @@ img {
 
 /* selects all code elements that don't have class defined, which is single quote markdown highlighting */
 code:not([class]) {
-  color: #ea0a8e;
+  color: #23282d;
+  padding: .2em .3em;
+  border-radius: 6px;
+  background-color: #F6F8FA;
+  font-size: .95em;
+  font-family: monospace;
 }
 
 /* Made with Cactus Badge */
